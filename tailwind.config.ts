@@ -7,10 +7,18 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Montserrat', 'sans-serif']
+    },
+    boxShadow: {
+      main: "0 0 0.5rem rgba(0, 0, 0, 0.5)",
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "primary": "rgb(var(--primary-orange))",
+        "secondary": "rgb(var(--secondary-orange))",
       },
     },
   },

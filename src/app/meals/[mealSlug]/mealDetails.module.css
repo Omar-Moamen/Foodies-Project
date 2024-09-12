@@ -1,0 +1,44 @@
+.header img {
+   animation: fade-slide-in-from-left 1s ease-out forwards;
+}
+
+.headerText {
+   animation: fade-slide-in-from-right 1s ease-out forwards;
+}
+
+.instructions {
+   animation: fade-slide-in-from-bottom 1s ease-out forwards;
+}
+
+@keyframes fade-slide-in-from-left {
+   0% {
+      opacity: 0;
+      transform: translateX(-1rem);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fade-slide-in-from-right {
+   0% {
+      opacity: 0;
+      transform: translateX(1rem);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fade-slide-in-from-bottom {
+   0% {
+      opacity: 0;
+      transform: translateY(1rem);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

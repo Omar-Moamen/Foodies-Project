@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary-orange: 249 87 42;
+    --secondary-orange: 255 138 5;
+    --orange-text-shadow:  0 0 15px #ff8a05;
+    --yellow-text-shadow:  0 0 18px rgba(248, 190, 42, 0.8);
+    --btn-shadow: 0 0 12px #f26412cc;
+  }
+}
 
 * {
   box-sizing: border-box;
