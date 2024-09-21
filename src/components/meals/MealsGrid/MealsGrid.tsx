@@ -12,7 +12,7 @@ const MealsGrid = ({ meals }: TMealsGridProps) =>
   ));
 
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))] gap-14 w-[90%] max-w-[90rem] my-20 mx-auto">
+    <div className="grid grid-cols-[repeat(auto-fill,_minmax(20rem,_1fr))] gap-14 w-[90%] max-w-[90rem] mb-20 mx-auto">
       {mealsList}
     </div>
   )

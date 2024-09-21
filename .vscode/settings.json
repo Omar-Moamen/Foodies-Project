@@ -2,5 +2,6 @@
    "cSpell.words": [
       "dompurify",
       "macncheese"
-   ]
+   ],
+   "typescript.tsdk": "node_modules\\typescript\\lib"
 }

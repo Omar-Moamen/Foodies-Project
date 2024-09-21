@@ -67,6 +67,7 @@ const ImagePicker = ({ label, name }: TProps) =>
             bg-[#1c2027] text-lg font-sans text-[#ddd6cb] resize-none"
                type="file"
                id={name}
+               name={name}
                accept="image/png, image/jpeg, image/webp, image/jpg"
                ref={imageInputRef}
                onChange={imageChangeHandler}

@@ -1,8 +1,7 @@
-import { StaticImageData } from "next/image";
 
 type TMeal = {
    id: number;
-   image: StaticImageData;
+   image: string;
    slug: string;
    title: string;
    creator: string;

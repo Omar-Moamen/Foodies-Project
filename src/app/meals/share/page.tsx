@@ -1,4 +1,6 @@
+"use client"
 import ImagePicker from "@/components/meals/ImagePicker/ImagePicker";
+import { shareMeal } from "@/lib/actions";
 
 
 const ShareMealPage = () =>
@@ -19,7 +21,8 @@ const ShareMealPage = () =>
             <p>Or any other meal you feel needs sharing!</p>
          </header>
          <main className="w-[90%] max-w-[75rem] my-12 mx-auto">
-            <form className="max-w-3xl">
+
+            <form className="max-w-3xl" action={shareMeal}>
                <div className="grid grid-cols-2 gap-6">
                   <div>
                      <label className={labelsClasses} htmlFor="name">Your name</label>
@@ -47,7 +50,7 @@ const ShareMealPage = () =>
                      required
                   ></textarea>
                </div>
-               <ImagePicker label="Image" name="imagePicker" />
+               <ImagePicker label="Your image" name="image" />
                <div className="w-fit mt-4 ml-auto">
                   <button
                      className="py-2 px-6 font-sans text-xl bg-gradient-to-r from-primary to-secondary 
